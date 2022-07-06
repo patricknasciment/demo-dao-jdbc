@@ -1,8 +1,10 @@
 package aplication;
 
-public class Main {
+import model.entities.Department;
+
+public class Program {
 
     public static void main(String[] args) {
-	// write your code here
+
     }
 }
