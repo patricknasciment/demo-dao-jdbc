@@ -21,5 +21,12 @@ public class Program {
              sellers) {
             System.out.println(obj);
         }
+
+        System.out.println("\n-------- Test 3: seller findByAll---------");
+        sellers = sellerDao.findAll();
+        for (Seller obj:
+                sellers) {
+            System.out.println(obj);
+        }
     }
 }
