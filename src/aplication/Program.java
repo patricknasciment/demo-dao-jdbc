@@ -5,6 +5,8 @@ import model.entities.Seller;
 import model.entities.dao.DaoFactory;
 import model.entities.dao.SellerDao;
 
+import java.util.List;
+
 public class Program {
 
     public static void main(String[] args) {
@@ -13,5 +15,11 @@ public class Program {
         Seller seller = sellerDao.findById(3);
         System.out.println("-------- Test 1: seller findById ---------");
         System.out.println(seller);
+        System.out.println("\n-------- Test 2: seller findByDepartment ---------");
+        List<Seller> sellers = sellerDao.findByDepartmentId(new Department(2, null));
+        for (Seller obj:
+             sellers) {
+            System.out.println(obj);
+        }
     }
 }
